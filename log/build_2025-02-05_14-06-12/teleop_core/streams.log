@@ -1,0 +1,38 @@
+[1.417s] Invoking command in '/home/neo/sim_ws/sim/teleop_core': PYTHONPATH=/home/neo/sim_ws/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/sim_ws/build/teleop_core/build install --record /home/neo/sim_ws/build/teleop_core/install.log --single-version-externally-managed install_data
+[1.665s] running egg_info
+[1.666s] creating ../../build/teleop_core/teleop_core.egg-info
+[1.686s] writing ../../build/teleop_core/teleop_core.egg-info/PKG-INFO
+[1.686s] writing dependency_links to ../../build/teleop_core/teleop_core.egg-info/dependency_links.txt
+[1.687s] writing entry points to ../../build/teleop_core/teleop_core.egg-info/entry_points.txt
+[1.688s] writing requirements to ../../build/teleop_core/teleop_core.egg-info/requires.txt
+[1.688s] writing top-level names to ../../build/teleop_core/teleop_core.egg-info/top_level.txt
+[1.688s] writing manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+[1.724s] reading manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+[1.725s] writing manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+[1.726s] running build
+[1.726s] running build_py
+[1.726s] creating /home/neo/sim_ws/build/teleop_core/build
+[1.727s] creating /home/neo/sim_ws/build/teleop_core/build/lib
+[1.727s] creating /home/neo/sim_ws/build/teleop_core/build/lib/teleop_core
+[1.727s] copying teleop_core/run_joy.py -> /home/neo/sim_ws/build/teleop_core/build/lib/teleop_core
+[1.727s] copying teleop_core/__init__.py -> /home/neo/sim_ws/build/teleop_core/build/lib/teleop_core
+[1.727s] running install
+[1.736s] running install_lib
+[1.751s] creating /home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core
+[1.751s] copying /home/neo/sim_ws/build/teleop_core/build/lib/teleop_core/run_joy.py -> /home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core
+[1.752s] copying /home/neo/sim_ws/build/teleop_core/build/lib/teleop_core/__init__.py -> /home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core
+[1.752s] byte-compiling /home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core/run_joy.py to run_joy.cpython-312.pyc
+[1.753s] byte-compiling /home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core/__init__.py to __init__.cpython-312.pyc
+[1.753s] running install_data
+[1.754s] creating /home/neo/sim_ws/install/teleop_core/share/ament_index
+[1.754s] creating /home/neo/sim_ws/install/teleop_core/share/ament_index/resource_index
+[1.754s] creating /home/neo/sim_ws/install/teleop_core/share/ament_index/resource_index/packages
+[1.754s] copying resource/teleop_core -> /home/neo/sim_ws/install/teleop_core/share/ament_index/resource_index/packages
+[1.755s] copying package.xml -> /home/neo/sim_ws/install/teleop_core/share/teleop_core
+[1.755s] copying launch/teleop_node.launch.py -> /home/neo/sim_ws/install/teleop_core/share/teleop_core
+[1.755s] running install_egg_info
+[1.777s] Copying ../../build/teleop_core/teleop_core.egg-info to /home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info
+[1.778s] running install_scripts
+[1.874s] Installing rover2_joy script to /home/neo/sim_ws/install/teleop_core/lib/teleop_core
+[1.875s] writing list of installed files to '/home/neo/sim_ws/build/teleop_core/install.log'
+[1.918s] Invoked command in '/home/neo/sim_ws/sim/teleop_core' returned '0': PYTHONPATH=/home/neo/sim_ws/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/sim_ws/build/teleop_core/build install --record /home/neo/sim_ws/build/teleop_core/install.log --single-version-externally-managed install_data

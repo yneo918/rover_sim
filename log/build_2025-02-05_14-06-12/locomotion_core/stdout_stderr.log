@@ -1,0 +1,57 @@
+running egg_info
+creating ../../build/locomotion_core/locomotion_core.egg-info
+writing ../../build/locomotion_core/locomotion_core.egg-info/PKG-INFO
+writing dependency_links to ../../build/locomotion_core/locomotion_core.egg-info/dependency_links.txt
+writing entry points to ../../build/locomotion_core/locomotion_core.egg-info/entry_points.txt
+writing requirements to ../../build/locomotion_core/locomotion_core.egg-info/requires.txt
+writing top-level names to ../../build/locomotion_core/locomotion_core.egg-info/top_level.txt
+writing manifest file '../../build/locomotion_core/locomotion_core.egg-info/SOURCES.txt'
+reading manifest file '../../build/locomotion_core/locomotion_core.egg-info/SOURCES.txt'
+writing manifest file '../../build/locomotion_core/locomotion_core.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/neo/sim_ws/build/locomotion_core/build
+creating /home/neo/sim_ws/build/locomotion_core/build/lib
+creating /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/enable_srv.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/enable_srv_pi.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/cmd_roboteq_jetson.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/rover_enable.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/movebase_kinematics.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/rover_state_controller.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/cmd_roboteq_pi.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+copying locomotion_core/__init__.py -> /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core
+running install
+running install_lib
+creating /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/enable_srv.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/enable_srv_pi.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/cmd_roboteq_jetson.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/rover_enable.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/movebase_kinematics.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/rover_state_controller.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/cmd_roboteq_pi.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+copying /home/neo/sim_ws/build/locomotion_core/build/lib/locomotion_core/__init__.py -> /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/enable_srv.py to enable_srv.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/enable_srv_pi.py to enable_srv_pi.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/cmd_roboteq_jetson.py to cmd_roboteq_jetson.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/rover_enable.py to rover_enable.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/movebase_kinematics.py to movebase_kinematics.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/rover_state_controller.py to rover_state_controller.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/cmd_roboteq_pi.py to cmd_roboteq_pi.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/neo/sim_ws/install/locomotion_core/share/ament_index
+creating /home/neo/sim_ws/install/locomotion_core/share/ament_index/resource_index
+creating /home/neo/sim_ws/install/locomotion_core/share/ament_index/resource_index/packages
+copying resource/locomotion_core -> /home/neo/sim_ws/install/locomotion_core/share/ament_index/resource_index/packages
+copying package.xml -> /home/neo/sim_ws/install/locomotion_core/share/locomotion_core
+running install_egg_info
+Copying ../../build/locomotion_core/locomotion_core.egg-info to /home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages/locomotion_core-0.0.0-py3.12.egg-info
+running install_scripts
+Installing cmd_roboteq script to /home/neo/sim_ws/install/locomotion_core/lib/locomotion_core
+Installing en_service script to /home/neo/sim_ws/install/locomotion_core/lib/locomotion_core
+Installing movebase_kinematics script to /home/neo/sim_ws/install/locomotion_core/lib/locomotion_core
+Installing rover_enable script to /home/neo/sim_ws/install/locomotion_core/lib/locomotion_core
+Installing rover_state_controller script to /home/neo/sim_ws/install/locomotion_core/lib/locomotion_core
+writing list of installed files to '/home/neo/sim_ws/build/locomotion_core/install.log'

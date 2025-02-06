@@ -1,0 +1,267 @@
+[1.100s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.101s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f10a5978080>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f10a594bce0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f10a594bce0>>, mixin_verb=('build',))
+[1.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.221s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/neo/sim_ws'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extensions ['ignore', 'ignore_ament_install']
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'ignore'
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'ignore_ament_install'
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extensions ['colcon_pkg']
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'colcon_pkg'
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extensions ['colcon_meta']
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'colcon_meta'
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extensions ['ros']
+[1.299s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'ros'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extensions ['cmake', 'python']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'cmake'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'python'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extensions ['python_setup_py']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim) by extension 'python_setup_py'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extension 'ignore'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extension 'ignore_ament_install'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extensions ['colcon_pkg']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extension 'colcon_pkg'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extensions ['colcon_meta']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extension 'colcon_meta'
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extensions ['ros']
+[1.300s] Level 1:colcon.colcon_core.package_identification:_identify(sim/fake_rover_state_controller) by extension 'ros'
+[1.307s] DEBUG:colcon.colcon_core.package_identification:Package 'sim/fake_rover_state_controller' with type 'ros.ament_python' and name 'fake_rover_state_controller'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extensions ['ignore', 'ignore_ament_install']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extension 'ignore'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extension 'ignore_ament_install'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extensions ['colcon_pkg']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extension 'colcon_pkg'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extensions ['colcon_meta']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extension 'colcon_meta'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extensions ['ros']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(sim/locomotion_core) by extension 'ros'
+[1.309s] DEBUG:colcon.colcon_core.package_identification:Package 'sim/locomotion_core' with type 'ros.ament_python' and name 'locomotion_core'
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extensions ['ignore', 'ignore_ament_install']
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extension 'ignore'
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extension 'ignore_ament_install'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extensions ['colcon_pkg']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extension 'colcon_pkg'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extensions ['colcon_meta']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extension 'colcon_meta'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extensions ['ros']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(sim/rover_description) by extension 'ros'
+[1.311s] DEBUG:colcon.colcon_core.package_identification:Package 'sim/rover_description' with type 'ros.ament_cmake' and name 'rover_description'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extensions ['ignore', 'ignore_ament_install']
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extension 'ignore'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extension 'ignore_ament_install'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extensions ['colcon_pkg']
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extension 'colcon_pkg'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extensions ['colcon_meta']
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extension 'colcon_meta'
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extensions ['ros']
+[1.311s] Level 1:colcon.colcon_core.package_identification:_identify(sim/teleop_core) by extension 'ros'
+[1.312s] DEBUG:colcon.colcon_core.package_identification:Package 'sim/teleop_core' with type 'ros.ament_python' and name 'teleop_core'
+[1.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.397s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[1.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.480s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'cmake_args' from command line to 'None'
+[1.480s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'cmake_target' from command line to 'None'
+[1.480s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'fake_rover_state_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.481s] DEBUG:colcon.colcon_core.verb:Building package 'fake_rover_state_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neo/sim_ws/build/fake_rover_state_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neo/sim_ws/install/fake_rover_state_controller', 'merge_install': False, 'path': '/home/neo/sim_ws/sim/fake_rover_state_controller', 'symlink_install': False, 'test_result_base': None}
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'cmake_args' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'cmake_target' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'cmake_clean_cache' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'cmake_clean_first' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'cmake_force_configure' from command line to 'False'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'ament_cmake_args' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'catkin_cmake_args' from command line to 'None'
+[1.481s] Level 5:colcon.colcon_core.verb:set package 'locomotion_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.482s] DEBUG:colcon.colcon_core.verb:Building package 'locomotion_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neo/sim_ws/build/locomotion_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neo/sim_ws/install/locomotion_core', 'merge_install': False, 'path': '/home/neo/sim_ws/sim/locomotion_core', 'symlink_install': False, 'test_result_base': None}
+[1.482s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_args' from command line to 'None'
+[1.482s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_target' from command line to 'None'
+[1.482s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'rover_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.483s] DEBUG:colcon.colcon_core.verb:Building package 'rover_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neo/sim_ws/build/rover_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neo/sim_ws/install/rover_description', 'merge_install': False, 'path': '/home/neo/sim_ws/sim/rover_description', 'symlink_install': False, 'test_result_base': None}
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'cmake_args' from command line to 'None'
+[1.483s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'cmake_target' from command line to 'None'
+[1.484s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.484s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'cmake_clean_cache' from command line to 'False'
+[1.484s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'cmake_clean_first' from command line to 'False'
+[1.484s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'cmake_force_configure' from command line to 'False'
+[1.484s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'ament_cmake_args' from command line to 'None'
+[1.484s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'catkin_cmake_args' from command line to 'None'
+[1.484s] Level 5:colcon.colcon_core.verb:set package 'teleop_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.484s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neo/sim_ws/build/teleop_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neo/sim_ws/install/teleop_core', 'merge_install': False, 'path': '/home/neo/sim_ws/sim/teleop_core', 'symlink_install': False, 'test_result_base': None}
+[1.484s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.486s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.487s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/neo/sim_ws/sim/fake_rover_state_controller' with build type 'ament_python'
+[1.487s] Level 1:colcon.colcon_core.shell:create_environment_hook('fake_rover_state_controller', 'ament_prefix_path')
+[1.493s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/hook/ament_prefix_path.ps1'
+[1.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/hook/ament_prefix_path.dsv'
+[1.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/hook/ament_prefix_path.sh'
+[1.496s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.496s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.499s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/neo/sim_ws/sim/locomotion_core' with build type 'ament_python'
+[1.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('locomotion_core', 'ament_prefix_path')
+[1.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/hook/ament_prefix_path.ps1'
+[1.500s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/hook/ament_prefix_path.dsv'
+[1.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/hook/ament_prefix_path.sh'
+[1.501s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.501s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.505s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neo/sim_ws/sim/rover_description' with build type 'ament_cmake'
+[1.505s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neo/sim_ws/sim/rover_description'
+[1.505s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.505s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.508s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/neo/sim_ws/sim/teleop_core' with build type 'ament_python'
+[1.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_core', 'ament_prefix_path')
+[1.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/teleop_core/share/teleop_core/hook/ament_prefix_path.ps1'
+[1.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neo/sim_ws/install/teleop_core/share/teleop_core/hook/ament_prefix_path.dsv'
+[1.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/teleop_core/share/teleop_core/hook/ament_prefix_path.sh'
+[1.511s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.511s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.749s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/neo/sim_ws/sim/fake_rover_state_controller'
+[1.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.944s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/neo/sim_ws/sim/locomotion_core'
+[1.944s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.944s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neo/sim_ws/build/rover_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/neo/sim_ws/sim/rover_description -DCMAKE_INSTALL_PREFIX=/home/neo/sim_ws/install/rover_description
+[2.147s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/neo/sim_ws/sim/teleop_core'
+[2.148s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.148s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.912s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neo/sim_ws/sim/locomotion_core': PYTHONPATH=/home/neo/sim_ws/build/locomotion_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/locomotion_core build --build-base /home/neo/sim_ws/build/locomotion_core/build install --record /home/neo/sim_ws/build/locomotion_core/install.log --single-version-externally-managed install_data
+[2.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neo/sim_ws/sim/teleop_core': PYTHONPATH=/home/neo/sim_ws/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/sim_ws/build/teleop_core/build install --record /home/neo/sim_ws/build/teleop_core/install.log --single-version-externally-managed install_data
+[2.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neo/sim_ws/sim/fake_rover_state_controller': PYTHONPATH=/home/neo/sim_ws/build/fake_rover_state_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/fake_rover_state_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fake_rover_state_controller build --build-base /home/neo/sim_ws/build/fake_rover_state_controller/build install --record /home/neo/sim_ws/build/fake_rover_state_controller/install.log --single-version-externally-managed install_data
+[3.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neo/sim_ws/sim/locomotion_core' returned '0': PYTHONPATH=/home/neo/sim_ws/build/locomotion_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/locomotion_core build --build-base /home/neo/sim_ws/build/locomotion_core/build install --record /home/neo/sim_ws/build/locomotion_core/install.log --single-version-externally-managed install_data
+[3.417s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/locomotion_core' for CMake module files
+[3.418s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/locomotion_core' for CMake config files
+[3.418s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/locomotion_core/lib'
+[3.418s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/locomotion_core/bin'
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/locomotion_core/lib/pkgconfig/locomotion_core.pc'
+[3.419s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/locomotion_core/lib/python3.12/site-packages'
+[3.419s] Level 1:colcon.colcon_core.shell:create_environment_hook('locomotion_core', 'pythonpath')
+[3.419s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/hook/pythonpath.ps1'
+[3.419s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/hook/pythonpath.dsv'
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/hook/pythonpath.sh'
+[3.420s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/locomotion_core/bin'
+[3.420s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(locomotion_core)
+[3.420s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/package.ps1'
+[3.421s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/package.dsv'
+[3.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/package.sh'
+[3.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/package.bash'
+[3.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/locomotion_core/share/locomotion_core/package.zsh'
+[3.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neo/sim_ws/install/locomotion_core/share/colcon-core/packages/locomotion_core)
+[3.427s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/teleop_core' for CMake module files
+[3.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neo/sim_ws/sim/teleop_core' returned '0': PYTHONPATH=/home/neo/sim_ws/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/sim_ws/build/teleop_core/build install --record /home/neo/sim_ws/build/teleop_core/install.log --single-version-externally-managed install_data
+[3.428s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/teleop_core' for CMake config files
+[3.428s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/teleop_core/lib'
+[3.428s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/teleop_core/bin'
+[3.428s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/teleop_core/lib/pkgconfig/teleop_core.pc'
+[3.429s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages'
+[3.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_core', 'pythonpath')
+[3.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/teleop_core/share/teleop_core/hook/pythonpath.ps1'
+[3.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neo/sim_ws/install/teleop_core/share/teleop_core/hook/pythonpath.dsv'
+[3.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/teleop_core/share/teleop_core/hook/pythonpath.sh'
+[3.430s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/teleop_core/bin'
+[3.430s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_core)
+[3.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/teleop_core/share/teleop_core/package.ps1'
+[3.430s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neo/sim_ws/install/teleop_core/share/teleop_core/package.dsv'
+[3.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/teleop_core/share/teleop_core/package.sh'
+[3.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/teleop_core/share/teleop_core/package.bash'
+[3.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/teleop_core/share/teleop_core/package.zsh'
+[3.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neo/sim_ws/install/teleop_core/share/colcon-core/packages/teleop_core)
+[3.433s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/fake_rover_state_controller' for CMake module files
+[3.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neo/sim_ws/sim/fake_rover_state_controller' returned '0': PYTHONPATH=/home/neo/sim_ws/build/fake_rover_state_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/fake_rover_state_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fake_rover_state_controller build --build-base /home/neo/sim_ws/build/fake_rover_state_controller/build install --record /home/neo/sim_ws/build/fake_rover_state_controller/install.log --single-version-externally-managed install_data
+[3.434s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/fake_rover_state_controller' for CMake config files
+[3.434s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/fake_rover_state_controller/lib'
+[3.435s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/fake_rover_state_controller/bin'
+[3.435s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/fake_rover_state_controller/lib/pkgconfig/fake_rover_state_controller.pc'
+[3.435s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/fake_rover_state_controller/lib/python3.12/site-packages'
+[3.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('fake_rover_state_controller', 'pythonpath')
+[3.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/hook/pythonpath.ps1'
+[3.435s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/hook/pythonpath.dsv'
+[3.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/hook/pythonpath.sh'
+[3.436s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/fake_rover_state_controller/bin'
+[3.436s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fake_rover_state_controller)
+[3.436s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/package.ps1'
+[3.436s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/package.dsv'
+[3.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/package.sh'
+[3.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/package.bash'
+[3.437s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/fake_rover_state_controller/share/fake_rover_state_controller/package.zsh'
+[3.437s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neo/sim_ws/install/fake_rover_state_controller/share/colcon-core/packages/fake_rover_state_controller)
+[6.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neo/sim_ws/build/rover_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/neo/sim_ws/sim/rover_description -DCMAKE_INSTALL_PREFIX=/home/neo/sim_ws/install/rover_description
+[6.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rover_description)
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/rover_description' for CMake module files
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/rover_description' for CMake config files
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/rover_description/bin'
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/rover_description/lib/pkgconfig/rover_description.pc'
+[6.937s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/rover_description/lib/python3.12/site-packages'
+[6.938s] Level 1:colcon.colcon_core.environment:checking '/home/neo/sim_ws/install/rover_description/bin'
+[6.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/rover_description/share/rover_description/package.ps1'
+[6.938s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neo/sim_ws/install/rover_description/share/rover_description/package.dsv'
+[6.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/rover_description/share/rover_description/package.sh'
+[6.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/rover_description/share/rover_description/package.bash'
+[6.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/neo/sim_ws/install/rover_description/share/rover_description/package.zsh'
+[6.939s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neo/sim_ws/install/rover_description/share/colcon-core/packages/rover_description)
+[6.950s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.950s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.950s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[6.950s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.030s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.030s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.030s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.031s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.049s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[7.049s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neo/sim_ws/install/local_setup.ps1'
+[7.050s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neo/sim_ws/install/_local_setup_util_ps1.py'
+[7.052s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neo/sim_ws/install/setup.ps1'
+[7.053s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neo/sim_ws/install/local_setup.sh'
+[7.055s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neo/sim_ws/install/_local_setup_util_sh.py'
+[7.055s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neo/sim_ws/install/setup.sh'
+[7.056s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neo/sim_ws/install/local_setup.bash'
+[7.057s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neo/sim_ws/install/setup.bash'
+[7.059s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neo/sim_ws/install/local_setup.zsh'
+[7.060s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neo/sim_ws/install/setup.zsh'

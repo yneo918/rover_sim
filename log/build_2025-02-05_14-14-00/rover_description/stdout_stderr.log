@@ -1,0 +1,46 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found xacro: 2.0.11 (/opt/ros/jazzy/share/xacro/cmake)
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/neo/sim_ws/build/rover_description
+-- Install configuration: ""
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/src
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/src/description
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/src/description/base (copy).urdf
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/src/description/base.urdf
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/launch
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/launch/display.launch.py
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/rviz
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/rviz/urdf_config.rviz
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/config
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/config/nav2_params.yaml
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/config/ekf.yaml
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/world
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/world/my_world.sdf
+-- Up-to-date: /home/neo/sim_ws/install/rover_description/share/rover_description//launch
+-- Up-to-date: /home/neo/sim_ws/install/rover_description/share/rover_description//launch/display.launch.py
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description//meshes
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description//meshes/wheel_wcm.dae
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description//meshes/rover_base.dae
+-- Installing: /home/neo/sim_ws/install/rover_description/share/ament_index/resource_index/package_run_dependencies/rover_description
+-- Installing: /home/neo/sim_ws/install/rover_description/share/ament_index/resource_index/parent_prefix_path/rover_description
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/environment/ament_prefix_path.sh
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/environment/ament_prefix_path.dsv
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/environment/path.sh
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/environment/path.dsv
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/local_setup.bash
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/local_setup.sh
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/local_setup.zsh
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/local_setup.dsv
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/package.dsv
+-- Installing: /home/neo/sim_ws/install/rover_description/share/ament_index/resource_index/packages/rover_description
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/cmake/rover_descriptionConfig.cmake
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/cmake/rover_descriptionConfig-version.cmake
+-- Installing: /home/neo/sim_ws/install/rover_description/share/rover_description/package.xml

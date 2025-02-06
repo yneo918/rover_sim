@@ -30,9 +30,9 @@ class JointStates(Node):
     def teleop_callback(self, msg):
         self.lx = msg.linear.x
         self.az = msg.angular.z
-        self.pos_x = self.pos_x + 0.1*self.lx
-        self.pos_theta = self.pos_theta + 0.1*self.az
-        self.pos_y =self.pos_x*math.tan(self.pos_theta)
+        self.pos_theta = self.pos_theta - 0.02*self.az
+        self.pos_x += 0.05*self.lx*math.cos(self.pos_theta)
+        self.pos_y += 0.05*self.lx*math.sin(self.pos_theta)
 
         jointstates_msg = JointState()
         t = time.time()
