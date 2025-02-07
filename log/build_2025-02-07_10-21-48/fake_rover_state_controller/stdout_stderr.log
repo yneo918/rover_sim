@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/entry_points.txt
+writing requirements to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/requires.txt
+writing top-level names to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/top_level.txt
+reading manifest file '../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying fake_rover_state_controller/teleop2jointstate.py -> /home/neo/rover_sim/build/fake_rover_state_controller/build/lib/fake_rover_state_controller
+running install
+running install_lib
+copying /home/neo/rover_sim/build/fake_rover_state_controller/build/lib/fake_rover_state_controller/teleop2jointstate.py -> /home/neo/rover_sim/install/fake_rover_state_controller/lib/python3.12/site-packages/fake_rover_state_controller
+byte-compiling /home/neo/rover_sim/install/fake_rover_state_controller/lib/python3.12/site-packages/fake_rover_state_controller/teleop2jointstate.py to teleop2jointstate.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/neo/rover_sim/install/fake_rover_state_controller/lib/python3.12/site-packages/fake_rover_state_controller-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info to /home/neo/rover_sim/install/fake_rover_state_controller/lib/python3.12/site-packages/fake_rover_state_controller-0.0.0-py3.12.egg-info
+running install_scripts
+Installing teleop2js script to /home/neo/rover_sim/install/fake_rover_state_controller/lib/fake_rover_state_controller
+writing list of installed files to '/home/neo/rover_sim/build/fake_rover_state_controller/install.log'

@@ -1,0 +1,25 @@
+[2.439s] Invoking command in '/home/neo/rover_sim/sim/locomotion_core': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/rover_sim/build/locomotion_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/rover_sim/install/locomotion_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion_core build --build-base /home/neo/rover_sim/build/locomotion_core/build install --record /home/neo/rover_sim/build/locomotion_core/install.log --single-version-externally-managed install_data
+[3.129s] running egg_info
+[3.176s] writing ../../build/locomotion_core/locomotion_core.egg-info/PKG-INFO
+[3.177s] writing dependency_links to ../../build/locomotion_core/locomotion_core.egg-info/dependency_links.txt
+[3.177s] writing entry points to ../../build/locomotion_core/locomotion_core.egg-info/entry_points.txt
+[3.177s] writing requirements to ../../build/locomotion_core/locomotion_core.egg-info/requires.txt
+[3.180s] writing top-level names to ../../build/locomotion_core/locomotion_core.egg-info/top_level.txt
+[3.270s] reading manifest file '../../build/locomotion_core/locomotion_core.egg-info/SOURCES.txt'
+[3.272s] writing manifest file '../../build/locomotion_core/locomotion_core.egg-info/SOURCES.txt'
+[3.273s] running build
+[3.273s] running build_py
+[3.274s] running install
+[3.286s] running install_lib
+[3.331s] running install_data
+[3.331s] running install_egg_info
+[3.379s] removing '/home/neo/rover_sim/install/locomotion_core/lib/python3.12/site-packages/locomotion_core-0.0.0-py3.12.egg-info' (and everything under it)
+[3.379s] Copying ../../build/locomotion_core/locomotion_core.egg-info to /home/neo/rover_sim/install/locomotion_core/lib/python3.12/site-packages/locomotion_core-0.0.0-py3.12.egg-info
+[3.379s] running install_scripts
+[3.658s] Installing cmd_roboteq script to /home/neo/rover_sim/install/locomotion_core/lib/locomotion_core
+[3.658s] Installing en_service script to /home/neo/rover_sim/install/locomotion_core/lib/locomotion_core
+[3.658s] Installing movebase_kinematics script to /home/neo/rover_sim/install/locomotion_core/lib/locomotion_core
+[3.659s] Installing rover_enable script to /home/neo/rover_sim/install/locomotion_core/lib/locomotion_core
+[3.659s] Installing rover_state_controller script to /home/neo/rover_sim/install/locomotion_core/lib/locomotion_core
+[3.659s] writing list of installed files to '/home/neo/rover_sim/build/locomotion_core/install.log'
+[3.723s] Invoked command in '/home/neo/rover_sim/sim/locomotion_core' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/rover_sim/build/locomotion_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/rover_sim/install/locomotion_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/locomotion_core build --build-base /home/neo/rover_sim/build/locomotion_core/build install --record /home/neo/rover_sim/build/locomotion_core/install.log --single-version-externally-managed install_data

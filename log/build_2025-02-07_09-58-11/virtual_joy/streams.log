@@ -1,0 +1,22 @@
+[1.720s] Invoking command in '/home/neo/rover_sim/sim/virtual_joy': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/rover_sim/build/virtual_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/rover_sim/install/virtual_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/virtual_joy build --build-base /home/neo/rover_sim/build/virtual_joy/build install --record /home/neo/rover_sim/build/virtual_joy/install.log --single-version-externally-managed install_data
+[2.310s] running egg_info
+[2.334s] writing ../../build/virtual_joy/virtual_joy.egg-info/PKG-INFO
+[2.334s] writing dependency_links to ../../build/virtual_joy/virtual_joy.egg-info/dependency_links.txt
+[2.335s] writing entry points to ../../build/virtual_joy/virtual_joy.egg-info/entry_points.txt
+[2.335s] writing requirements to ../../build/virtual_joy/virtual_joy.egg-info/requires.txt
+[2.335s] writing top-level names to ../../build/virtual_joy/virtual_joy.egg-info/top_level.txt
+[2.395s] reading manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+[2.396s] adding license file 'LICENSE'
+[2.396s] writing manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+[2.397s] running build
+[2.397s] running build_py
+[2.397s] running install
+[2.404s] running install_lib
+[2.427s] running install_data
+[2.427s] running install_egg_info
+[2.452s] removing '/home/neo/rover_sim/install/virtual_joy/lib/python3.12/site-packages/virtual_joy-0.0.0-py3.12.egg-info' (and everything under it)
+[2.452s] Copying ../../build/virtual_joy/virtual_joy.egg-info to /home/neo/rover_sim/install/virtual_joy/lib/python3.12/site-packages/virtual_joy-0.0.0-py3.12.egg-info
+[2.453s] running install_scripts
+[2.611s] Installing virtual_joy script to /home/neo/rover_sim/install/virtual_joy/lib/virtual_joy
+[2.611s] writing list of installed files to '/home/neo/rover_sim/build/virtual_joy/install.log'
+[2.651s] Invoked command in '/home/neo/rover_sim/sim/virtual_joy' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/rover_sim/build/virtual_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/rover_sim/install/virtual_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/virtual_joy build --build-base /home/neo/rover_sim/build/virtual_joy/build install --record /home/neo/rover_sim/build/virtual_joy/install.log --single-version-externally-managed install_data

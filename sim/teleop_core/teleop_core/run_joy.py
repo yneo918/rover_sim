@@ -21,8 +21,8 @@ class joy_process(Node):
         self.az_axisN = 0
         self.en_buttonN = 4
         
-        self.publisher_cmd_vel = self.create_publisher(Twist, 'cmd_vel', 5)
-        self.publisher_en = self.create_publisher(Bool, 'r2/enable', 1)
+        self.publisher_cmd_vel = self.create_publisher(Twist, '/sim/cmd_vel', 5)
+        self.publisher_en = self.create_publisher(Bool, '/sim/enable', 1)
 
         #self.j_lx_lx = 0
         #self.j_az = 0 

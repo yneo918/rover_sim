@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/teleop_core/teleop_core.egg-info/PKG-INFO
+writing dependency_links to ../../build/teleop_core/teleop_core.egg-info/dependency_links.txt
+writing entry points to ../../build/teleop_core/teleop_core.egg-info/entry_points.txt
+writing requirements to ../../build/teleop_core/teleop_core.egg-info/requires.txt
+writing top-level names to ../../build/teleop_core/teleop_core.egg-info/top_level.txt
+reading manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+writing manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/teleop_core/teleop_core.egg-info to /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info
+running install_scripts
+Installing rover2_joy script to /home/neo/rover_sim/install/teleop_core/lib/teleop_core
+writing list of installed files to '/home/neo/rover_sim/build/teleop_core/install.log'

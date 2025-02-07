@@ -1,0 +1,24 @@
+[2.452s] Invoking command in '/home/neo/rover_sim/sim/teleop_core': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/rover_sim/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/rover_sim/build/teleop_core/build install --record /home/neo/rover_sim/build/teleop_core/install.log --single-version-externally-managed install_data
+[3.051s] running egg_info
+[3.142s] writing ../../build/teleop_core/teleop_core.egg-info/PKG-INFO
+[3.146s] writing dependency_links to ../../build/teleop_core/teleop_core.egg-info/dependency_links.txt
+[3.146s] writing entry points to ../../build/teleop_core/teleop_core.egg-info/entry_points.txt
+[3.149s] writing requirements to ../../build/teleop_core/teleop_core.egg-info/requires.txt
+[3.149s] writing top-level names to ../../build/teleop_core/teleop_core.egg-info/top_level.txt
+[3.304s] reading manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+[3.306s] writing manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+[3.306s] running build
+[3.311s] running build_py
+[3.311s] copying teleop_core/run_joy.py -> /home/neo/rover_sim/build/teleop_core/build/lib/teleop_core
+[3.314s] running install
+[3.338s] running install_lib
+[3.384s] copying /home/neo/rover_sim/build/teleop_core/build/lib/teleop_core/run_joy.py -> /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core
+[3.385s] byte-compiling /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core/run_joy.py to run_joy.cpython-312.pyc
+[3.387s] running install_data
+[3.389s] running install_egg_info
+[3.443s] removing '/home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info' (and everything under it)
+[3.447s] Copying ../../build/teleop_core/teleop_core.egg-info to /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info
+[3.447s] running install_scripts
+[3.806s] Installing rover2_joy script to /home/neo/rover_sim/install/teleop_core/lib/teleop_core
+[3.807s] writing list of installed files to '/home/neo/rover_sim/build/teleop_core/install.log'
+[3.901s] Invoked command in '/home/neo/rover_sim/sim/teleop_core' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/rover_sim/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/rover_sim/build/teleop_core/build install --record /home/neo/rover_sim/build/teleop_core/install.log --single-version-externally-managed install_data

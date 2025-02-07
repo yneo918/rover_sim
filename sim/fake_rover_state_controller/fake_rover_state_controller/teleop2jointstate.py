@@ -14,7 +14,7 @@ class JointStates(Node):
         super().__init__('teleop_to_jointstate')
         self.subscription = self.create_subscription(
             Twist,
-            'cmd_vel',
+            '/sim/cmd_vel',
             self.teleop_callback,
             10)
         self.subscription  # prevent unused variable warning
@@ -30,7 +30,7 @@ class JointStates(Node):
     def teleop_callback(self, msg):
         self.lx = msg.linear.x
         self.az = msg.angular.z
-        self.pos_theta = self.pos_theta - 0.02*self.az
+        self.pos_theta = self.pos_theta + 0.02*self.az
         self.pos_x += 0.05*self.lx*math.cos(self.pos_theta)
         self.pos_y += 0.05*self.lx*math.sin(self.pos_theta)
 

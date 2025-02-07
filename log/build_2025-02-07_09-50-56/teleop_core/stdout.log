@@ -1,0 +1,30 @@
+running egg_info
+creating ../../build/teleop_core/teleop_core.egg-info
+writing ../../build/teleop_core/teleop_core.egg-info/PKG-INFO
+writing dependency_links to ../../build/teleop_core/teleop_core.egg-info/dependency_links.txt
+writing entry points to ../../build/teleop_core/teleop_core.egg-info/entry_points.txt
+writing requirements to ../../build/teleop_core/teleop_core.egg-info/requires.txt
+writing top-level names to ../../build/teleop_core/teleop_core.egg-info/top_level.txt
+writing manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+reading manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+writing manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/neo/rover_sim/build/teleop_core/build
+creating /home/neo/rover_sim/build/teleop_core/build/lib
+creating /home/neo/rover_sim/build/teleop_core/build/lib/teleop_core
+copying teleop_core/run_joy.py -> /home/neo/rover_sim/build/teleop_core/build/lib/teleop_core
+copying teleop_core/__init__.py -> /home/neo/rover_sim/build/teleop_core/build/lib/teleop_core
+running install
+running install_lib
+creating /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core
+copying /home/neo/rover_sim/build/teleop_core/build/lib/teleop_core/run_joy.py -> /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core
+copying /home/neo/rover_sim/build/teleop_core/build/lib/teleop_core/__init__.py -> /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core
+byte-compiling /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core/run_joy.py to run_joy.cpython-312.pyc
+byte-compiling /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core/__init__.py to __init__.cpython-312.pyc
+running install_data
+running install_egg_info
+Copying ../../build/teleop_core/teleop_core.egg-info to /home/neo/rover_sim/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info
+running install_scripts
+Installing rover2_joy script to /home/neo/rover_sim/install/teleop_core/lib/teleop_core
+writing list of installed files to '/home/neo/rover_sim/build/teleop_core/install.log'
