@@ -1,0 +1,22 @@
+[1.924s] Invoking command in '/home/neo/sim_ws/sim/virtual_joy': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/virtual_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/virtual_joy build --build-base /home/neo/sim_ws/build/virtual_joy/build install --record /home/neo/sim_ws/build/virtual_joy/install.log --single-version-externally-managed install_data
+[2.567s] running egg_info
+[2.594s] writing ../../build/virtual_joy/virtual_joy.egg-info/PKG-INFO
+[2.595s] writing dependency_links to ../../build/virtual_joy/virtual_joy.egg-info/dependency_links.txt
+[2.595s] writing entry points to ../../build/virtual_joy/virtual_joy.egg-info/entry_points.txt
+[2.595s] writing requirements to ../../build/virtual_joy/virtual_joy.egg-info/requires.txt
+[2.595s] writing top-level names to ../../build/virtual_joy/virtual_joy.egg-info/top_level.txt
+[2.643s] reading manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+[2.644s] adding license file 'LICENSE'
+[2.644s] writing manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+[2.644s] running build
+[2.645s] running build_py
+[2.645s] running install
+[2.652s] running install_lib
+[2.677s] running install_data
+[2.677s] running install_egg_info
+[2.707s] removing '/home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy-0.0.0-py3.12.egg-info' (and everything under it)
+[2.707s] Copying ../../build/virtual_joy/virtual_joy.egg-info to /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy-0.0.0-py3.12.egg-info
+[2.708s] running install_scripts
+[2.876s] Installing virtual_joy script to /home/neo/sim_ws/install/virtual_joy/lib/virtual_joy
+[2.876s] writing list of installed files to '/home/neo/sim_ws/build/virtual_joy/install.log'
+[2.922s] Invoked command in '/home/neo/sim_ws/sim/virtual_joy' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/virtual_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/virtual_joy build --build-base /home/neo/sim_ws/build/virtual_joy/build install --record /home/neo/sim_ws/build/virtual_joy/install.log --single-version-externally-managed install_data

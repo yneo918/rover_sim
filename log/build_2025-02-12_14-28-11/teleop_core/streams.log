@@ -1,0 +1,21 @@
+[2.143s] Invoking command in '/home/neo/sim_ws/sim/teleop_core': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/sim_ws/build/teleop_core/build install --record /home/neo/sim_ws/build/teleop_core/install.log --single-version-externally-managed install_data
+[2.738s] running egg_info
+[2.784s] writing ../../build/teleop_core/teleop_core.egg-info/PKG-INFO
+[2.784s] writing dependency_links to ../../build/teleop_core/teleop_core.egg-info/dependency_links.txt
+[2.784s] writing entry points to ../../build/teleop_core/teleop_core.egg-info/entry_points.txt
+[2.784s] writing requirements to ../../build/teleop_core/teleop_core.egg-info/requires.txt
+[2.785s] writing top-level names to ../../build/teleop_core/teleop_core.egg-info/top_level.txt
+[2.878s] reading manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+[2.881s] writing manifest file '../../build/teleop_core/teleop_core.egg-info/SOURCES.txt'
+[2.881s] running build
+[2.881s] running build_py
+[2.881s] running install
+[2.893s] running install_lib
+[2.940s] running install_data
+[2.941s] running install_egg_info
+[2.985s] removing '/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info' (and everything under it)
+[2.986s] Copying ../../build/teleop_core/teleop_core.egg-info to /home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages/teleop_core-0.0.0-py3.12.egg-info
+[2.986s] running install_scripts
+[3.286s] Installing rover2_joy script to /home/neo/sim_ws/install/teleop_core/lib/teleop_core
+[3.290s] writing list of installed files to '/home/neo/sim_ws/build/teleop_core/install.log'
+[3.358s] Invoked command in '/home/neo/sim_ws/sim/teleop_core' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/teleop_core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/teleop_core/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_core build --build-base /home/neo/sim_ws/build/teleop_core/build install --record /home/neo/sim_ws/build/teleop_core/install.log --single-version-externally-managed install_data
