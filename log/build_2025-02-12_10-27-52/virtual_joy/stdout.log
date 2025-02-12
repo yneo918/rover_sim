@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/virtual_joy/virtual_joy.egg-info
+writing ../../build/virtual_joy/virtual_joy.egg-info/PKG-INFO
+writing dependency_links to ../../build/virtual_joy/virtual_joy.egg-info/dependency_links.txt
+writing entry points to ../../build/virtual_joy/virtual_joy.egg-info/entry_points.txt
+writing requirements to ../../build/virtual_joy/virtual_joy.egg-info/requires.txt
+writing top-level names to ../../build/virtual_joy/virtual_joy.egg-info/top_level.txt
+writing manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+reading manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/neo/sim_ws/build/virtual_joy/build
+creating /home/neo/sim_ws/build/virtual_joy/build/lib
+creating /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy
+copying virtual_joy/virtual_joy.py -> /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy
+copying virtual_joy/__init__.py -> /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy
+running install
+running install_lib
+creating /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy
+copying /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy/virtual_joy.py -> /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy
+copying /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy/__init__.py -> /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy
+byte-compiling /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy/virtual_joy.py to virtual_joy.cpython-312.pyc
+byte-compiling /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/neo/sim_ws/install/virtual_joy/share/ament_index
+creating /home/neo/sim_ws/install/virtual_joy/share/ament_index/resource_index
+creating /home/neo/sim_ws/install/virtual_joy/share/ament_index/resource_index/packages
+copying resource/virtual_joy -> /home/neo/sim_ws/install/virtual_joy/share/ament_index/resource_index/packages
+copying package.xml -> /home/neo/sim_ws/install/virtual_joy/share/virtual_joy
+running install_egg_info
+Copying ../../build/virtual_joy/virtual_joy.egg-info to /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy-0.0.0-py3.12.egg-info
+running install_scripts
+Installing virtual_joy script to /home/neo/sim_ws/install/virtual_joy/lib/virtual_joy
+writing list of installed files to '/home/neo/sim_ws/build/virtual_joy/install.log'

@@ -19,10 +19,14 @@ class joy_process(Node):
         
         self.lx_axisN = 1
         self.az_axisN = 0
-        self.en_buttonN = 4
+        self.en_buttonN = 4 #LB
+        self.sw1_buttonN = 0 #A
+        self.sw0_buttonN = 1 #B
         
-        self.publisher_cmd_vel = self.create_publisher(Twist, '/sim/cmd_vel', 5)
-        self.publisher_en = self.create_publisher(Bool, '/sim/enable', 1)
+        self.publisher_cmd_vel1 = self.create_publisher(Twist, '/sim/p1/cmd_vel', 5)
+        self.publisher_cmd_vel2 = self.create_publisher(Twist, '/sim/p2/cmd_vel', 5)
+        self.publisher_cmd_vel3 = self.create_publisher(Twist, '/sim/p3/cmd_vel', 5)
+        self.publisher_en = self.create_publisher(Bool, 'r2/enable', 1)
 
         #self.j_lx_lx = 0
         #self.j_az = 0 
@@ -44,8 +48,13 @@ class joy_process(Node):
             en_state.data = False
             val.linear.x = 0.0
             val.angular.z = 0.0
-
-        self.publisher_cmd_vel.publish(val)
+        
+        if msg.buttons[self.sw1_buttonN]*2 + msg.buttons[self.sw0_buttonN] == 0:
+            self.publisher_cmd_vel1.publish(val)
+        elif msg.buttons[self.sw1_buttonN]*2 + msg.buttons[self.sw0_buttonN] == 1: 
+            self.publisher_cmd_vel2.publish(val)
+        elif msg.buttons[self.sw1_buttonN]*2 + msg.buttons[self.sw0_buttonN] == 2:
+            self.publisher_cmd_vel3.publish(val)
         self.publisher_en.publish(en_state)
 
 
