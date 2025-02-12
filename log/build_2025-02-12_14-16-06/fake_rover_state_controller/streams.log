@@ -1,0 +1,21 @@
+[2.237s] Invoking command in '/home/neo/sim_ws/sim/fake_rover_state_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/fake_rover_state_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/fake_rover_state_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fake_rover_state_controller build --build-base /home/neo/sim_ws/build/fake_rover_state_controller/build install --record /home/neo/sim_ws/build/fake_rover_state_controller/install.log --single-version-externally-managed install_data
+[2.797s] running egg_info
+[2.840s] writing ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/PKG-INFO
+[2.840s] writing dependency_links to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/dependency_links.txt
+[2.840s] writing entry points to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/entry_points.txt
+[2.840s] writing requirements to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/requires.txt
+[2.841s] writing top-level names to ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/top_level.txt
+[2.924s] reading manifest file '../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/SOURCES.txt'
+[2.924s] writing manifest file '../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info/SOURCES.txt'
+[2.925s] running build
+[2.926s] running build_py
+[2.926s] running install
+[2.938s] running install_lib
+[2.979s] running install_data
+[2.979s] running install_egg_info
+[3.024s] removing '/home/neo/sim_ws/install/fake_rover_state_controller/lib/python3.12/site-packages/fake_rover_state_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[3.024s] Copying ../../build/fake_rover_state_controller/fake_rover_state_controller.egg-info to /home/neo/sim_ws/install/fake_rover_state_controller/lib/python3.12/site-packages/fake_rover_state_controller-0.0.0-py3.12.egg-info
+[3.026s] running install_scripts
+[3.425s] Installing teleop2js script to /home/neo/sim_ws/install/fake_rover_state_controller/lib/fake_rover_state_controller
+[3.428s] writing list of installed files to '/home/neo/sim_ws/build/fake_rover_state_controller/install.log'
+[3.546s] Invoked command in '/home/neo/sim_ws/sim/fake_rover_state_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/fake_rover_state_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/fake_rover_state_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fake_rover_state_controller build --build-base /home/neo/sim_ws/build/fake_rover_state_controller/build install --record /home/neo/sim_ws/build/fake_rover_state_controller/install.log --single-version-externally-managed install_data
