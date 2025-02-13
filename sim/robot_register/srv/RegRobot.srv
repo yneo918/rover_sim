@@ -1,0 +1,8 @@
+bool reg
+string robot_id
+float32 x_pos
+float32 y_pos
+float32 t_pos
+---
+bool success
+

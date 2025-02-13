@@ -1,0 +1,35 @@
+[1.707s] Invoking command in '/home/neo/sim_ws/sim/virtual_joy': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/virtual_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/virtual_joy build --build-base /home/neo/sim_ws/build/virtual_joy/build install --record /home/neo/sim_ws/build/virtual_joy/install.log --single-version-externally-managed install_data
+[1.952s] running egg_info
+[1.953s] creating ../../build/virtual_joy/virtual_joy.egg-info
+[1.975s] writing ../../build/virtual_joy/virtual_joy.egg-info/PKG-INFO
+[1.976s] writing dependency_links to ../../build/virtual_joy/virtual_joy.egg-info/dependency_links.txt
+[1.976s] writing entry points to ../../build/virtual_joy/virtual_joy.egg-info/entry_points.txt
+[1.976s] writing requirements to ../../build/virtual_joy/virtual_joy.egg-info/requires.txt
+[1.977s] writing top-level names to ../../build/virtual_joy/virtual_joy.egg-info/top_level.txt
+[1.977s] writing manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+[2.011s] reading manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+[2.012s] adding license file 'LICENSE'
+[2.013s] writing manifest file '../../build/virtual_joy/virtual_joy.egg-info/SOURCES.txt'
+[2.014s] running build
+[2.014s] running build_py
+[2.014s] creating /home/neo/sim_ws/build/virtual_joy/build
+[2.014s] creating /home/neo/sim_ws/build/virtual_joy/build/lib
+[2.014s] creating /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy
+[2.014s] copying virtual_joy/__init__.py -> /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy
+[2.014s] copying virtual_joy/virtual_joy.py -> /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy
+[2.014s] running install
+[2.020s] running install_lib
+[2.039s] creating /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy
+[2.039s] copying /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy/__init__.py -> /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy
+[2.039s] copying /home/neo/sim_ws/build/virtual_joy/build/lib/virtual_joy/virtual_joy.py -> /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy
+[2.040s] byte-compiling /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy/__init__.py to __init__.cpython-312.pyc
+[2.040s] byte-compiling /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy/virtual_joy.py to virtual_joy.cpython-312.pyc
+[2.041s] running install_data
+[2.041s] copying resource/virtual_joy -> /home/neo/sim_ws/install/virtual_joy/share/ament_index/resource_index/packages
+[2.041s] copying package.xml -> /home/neo/sim_ws/install/virtual_joy/share/virtual_joy
+[2.042s] running install_egg_info
+[2.062s] Copying ../../build/virtual_joy/virtual_joy.egg-info to /home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages/virtual_joy-0.0.0-py3.12.egg-info
+[2.062s] running install_scripts
+[2.194s] Installing virtual_joy script to /home/neo/sim_ws/install/virtual_joy/lib/virtual_joy
+[2.194s] writing list of installed files to '/home/neo/sim_ws/build/virtual_joy/install.log'
+[2.232s] Invoked command in '/home/neo/sim_ws/sim/virtual_joy' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neo/sim_ws/build/virtual_joy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neo/sim_ws/install/virtual_joy/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/virtual_joy build --build-base /home/neo/sim_ws/build/virtual_joy/build install --record /home/neo/sim_ws/build/virtual_joy/install.log --single-version-externally-managed install_data
