@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from pioneer_interfaces.srv import RegRobot
-from pioneer_msgs.msg import PioneerInfo
+from pioneer_interfaces.msg import PioneerInfo
 
 class RobotRegisterServer(Node):
     def __init__(self):

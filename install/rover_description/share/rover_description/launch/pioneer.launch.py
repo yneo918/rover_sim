@@ -1,33 +1,38 @@
 import os
 import launch
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration, Command
 import launch_ros
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
-def generate_launch_description():
-    # パッケージディレクトリを取得
+def check_service_response(context, *args, **kwargs):
+    service_checker = Node(
+        package='register_service',
+        executable='register_service_req',
+        name='service_checker',
+        output='screen',
+        parameters=[{
+            'robot_id': LaunchConfiguration('robot_id'),
+            'x': LaunchConfiguration('x'),
+            'y': LaunchConfiguration('y'),
+            'theta': LaunchConfiguration('t')
+        }]  
+    )
+
+    return [service_checker]
+
+def launch_setup(context, *args, **kwargs):
     pkg_share = launch_ros.substitutions.FindPackageShare(package='rover_description').find('rover_description')
-
-    # Xacroファイルのパス
     xacro_file = os.path.join(pkg_share, 'src/description/pioneer_robot.xacro')
+    robot_id = LaunchConfiguration("robot_id").perform(context)
 
-    return LaunchDescription([
-        DeclareLaunchArgument("robot_id", default_value="p1", description="robots id"),
-        DeclareLaunchArgument("x", default_value="0.0", description="x pos"),
-        DeclareLaunchArgument("y", default_value="0.0", description="y pos"),
-        DeclareLaunchArgument("t", default_value="0.0", description="theta"),
-        
-        # Gazeboやシミュレーション用の時間を有効化
-        DeclareLaunchArgument("use_sim_time", default_value="True", description="Flag to enable use_sim_time"),
-
-        # robot_state_publisherを起動（Xacroを動的に処理）
+    main_nodes = [
         Node(
             package="robot_state_publisher",
             executable="robot_state_publisher",
-            name="robot_state_publisher",
+            name=f"{robot_id}_state_publisher",
             output="screen",
             parameters=[{
                 "robot_description": Command([
@@ -45,4 +50,26 @@ def generate_launch_description():
                 "use_sim_time": LaunchConfiguration("use_sim_time"),
             }]
         ),
+        Node(
+            package='register_service',
+            executable='remove_service_req',
+            name='robot_remove_request',
+            output='screen',
+            parameters=[{
+                'robot_id': LaunchConfiguration('robot_id')
+            }]
+        ),
+    ]
+    return main_nodes
+
+def generate_launch_description():
+    return LaunchDescription([
+        DeclareLaunchArgument("robot_id", default_value="p1", description="Robot ID"),
+        DeclareLaunchArgument("x", default_value="0.0", description="X position"),
+        DeclareLaunchArgument("y", default_value="0.0", description="Y position"),
+        DeclareLaunchArgument("t", default_value="0.0", description="Theta"),
+        DeclareLaunchArgument("use_sim_time", default_value="True", description="Flag to enable use_sim_time"),
+
+        OpaqueFunction(function=check_service_response),
+        OpaqueFunction(function=launch_setup),
     ])

@@ -24,9 +24,9 @@
         </inertial>
         <visual>
           <xacro:if value="$(arg mesh_enabled)">
-            <origin xyz="-0.1 0.3 -0.5" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 1.57"/>
             <geometry>
-              <mesh filename="package://rover_description/meshes/pioneer_3dx.stl"
+              <mesh filename="package://rover_description/meshes/pioneer_cad_v2.stl"
                     scale="0.001 0.001 0.001"/>
             </geometry>
           </xacro:if>
@@ -62,7 +62,7 @@
       <joint name = "${robot_id}_base_joint"  type = "fixed">
           <parent link="${robot_id}_base_link"/>
           <child link="${robot_id}_rover_link"/>
-          <origin xyz="0.0 0.0 0.5" rpy="0 0 0" />
+          <origin xyz="0.0 0.0 0.02" rpy="0 0 0" />
           <axis xyz="0 0 0" rpy="0 0 0" />
       </joint>
   </xacro:macro>

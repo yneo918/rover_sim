@@ -23,6 +23,7 @@ setup(
         'console_scripts': [
             'register_service = register_service.robot_register:main',
             'register_service_req = register_service.robot_register_request:main',
+            'remove_service_req = register_service.robot_remove_request:main',  
         ],
     },
 )
