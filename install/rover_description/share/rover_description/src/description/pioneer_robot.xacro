@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="multi_rover">
-  <!-- 引数をドキュメント直下で定義 -->
   <xacro:arg name="x_pos" default="0.0"/>
   <xacro:arg name="y_pos" default="0.0"/>
   <xacro:arg name="t_pos" default="0.0"/>
@@ -9,7 +8,6 @@
 
   <link name="world"/>
 
-  <!-- ロボットのインスタンスを定義 -->
   <xacro:macro name="p_instance" params="robot_id x y theta">
       <link name="${robot_id}_base_link"/>
       <link name="${robot_id}_x_axis"/>
