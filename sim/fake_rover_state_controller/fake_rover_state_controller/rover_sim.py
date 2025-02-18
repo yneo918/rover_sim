@@ -27,9 +27,8 @@ class JointStates(Node):
 
         self.positions = {}
         self.vels = {}
-        self.joint_names = []
+        self.joint_names = ['w_to_x', 'x_to_y', 'y_to_t']
         
-        self.joint_state_publisher_ = self.create_publisher(JointState, 'joint_states', 10)
         timer_period = UPDATE_RATE
         self.timer = self.create_timer(timer_period, self.publish_joint_states)
 
@@ -57,13 +56,12 @@ class JointStates(Node):
         jointstates_msg.header.stamp.nanosec = int((t % 1) * 1e9)
         for key in self.vels.keys():
             self.update_position(key, self.vels[key]['transform'], self.vels[key]['rotate'])
-        jointstates_msg.name = self.joint_names
-        jointstates_msg.position = []
-        for key in self.positions.keys():
+            jointstates_msg.name = [f'/{key}/{joint_name}' for joint_name in self.joint_names]
+            jointstates_msg.position = []
             jointstates_msg.position.extend([
                 self.positions[key]['x'], self.positions[key]['y'], self.positions[key]['theta']
             ])
-        self.joint_state_publisher_.publish(jointstates_msg)
+            self.pubsub.publish(f'{key}/joint_states', jointstates_msg)
 
     def teleop_callback(self, msg, robot_name):
         self.update_vel(robot_name, msg.linear.x, msg.angular.z)
@@ -71,18 +69,13 @@ class JointStates(Node):
     def robot_register_callback(self, msg):
         self.positions.update({msg.robot_id: {'x': msg.pose.x, 'y': msg.pose.y, 'theta': msg.pose.theta}})
         self.vels.update({msg.robot_id: {'transform': 0.0, 'rotate': 0.0, 'alive': 0}})
-        self.joint_names.append(f'{msg.robot_id}_w_to_x')
-        self.joint_names.append(f'{msg.robot_id}_x_to_y')
-        self.joint_names.append(f'{msg.robot_id}_y_to_t')
         self.get_logger().info(f'Received request: Register / {msg.robot_id}')
         self.pubsub.create_subscription(Twist, f'/sim/{msg.robot_id}/cmd_vel', lambda msg, name=msg.robot_id: self.teleop_callback(msg, name), 10)
+        self.pubsub.create_publisher(JointState, f'{msg.robot_id}/joint_states', 10)
     
     def robot_remove_callback(self, msg):
         self.positions.pop(msg.robot_id)
         self.vels.pop(msg.robot_id)
-        self.joint_names.remove(f'{msg.robot_id}_w_to_x')
-        self.joint_names.remove(f'{msg.robot_id}_x_to_y')
-        self.joint_names.remove(f'{msg.robot_id}_y_to_t')
         self.get_logger().info(f'Received request: Remove / {msg.robot_id}')
 
 

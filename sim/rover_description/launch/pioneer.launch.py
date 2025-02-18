@@ -33,13 +33,12 @@ def launch_setup(context, *args, **kwargs):
             package="robot_state_publisher",
             executable="robot_state_publisher",
             name=f"{robot_id}_state_publisher",
+            namespace=robot_id,
             output="screen",
             parameters=[{
                 "robot_description": Command([
                     "xacro ", 
                     xacro_file, 
-                    " robot_id:=", 
-                    LaunchConfiguration("robot_id"),
                     " x:=", 
                     LaunchConfiguration("x"),
                     " y:=", 
@@ -48,7 +47,13 @@ def launch_setup(context, *args, **kwargs):
                     LaunchConfiguration("t")
                 ]),
                 "use_sim_time": LaunchConfiguration("use_sim_time"),
+                "frame_prefix": f"{robot_id}/",
             }]
+        ),
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            arguments=["0", "0", "0", "0", "0", "0", "world", f"{robot_id}/world"],
         ),
         Node(
             package='register_service',
