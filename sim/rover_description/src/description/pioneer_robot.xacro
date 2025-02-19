@@ -15,7 +15,7 @@
 
       <link name="rover_link">
         <inertial>
-          <origin xyz="0.0 0 0.0" rpy="0 0 0"/>
+          <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
           <mass value="3.978"/>
           <inertia ixx="0.021858680" ixy="0.0" ixz="0.010020353"
                     iyy="0.078572349" iyz="0.0"
@@ -40,7 +40,7 @@
         <limit lower="-20.0" upper="20.0" effort="0.5" velocity="0.5"/>
       </joint>
       <joint name="x_to_y" type="prismatic">
-        <parent link="theta_axis"/>
+        <parent link="x_axis"/>
         <child link="y_axis"/>
         <axis xyz="0 1 0"/> 
         <origin xyz="0.0 ${y} 0.0" rpy="0 0 0" />
@@ -48,14 +48,14 @@
       </joint>
       <joint name="y_to_t" type="revolute">
         <parent link="y_axis"/>
-        <child link="base_link"/>
+        <child link="theta_axis"/>
         <axis xyz="0 0 1"/>
         <origin xyz="0.0 0.0 0.0" rpy="${theta} ${theta} ${theta}" />
         <limit lower="-3" upper="3" effort="0.5" velocity="0.5"/>
       </joint>
       <joint name="t_to_b" type="fixed">
-        <parent link="x_axis"/>
-        <child link="theta_axis"/>
+        <parent link="theta_axis"/>
+        <child link="base_link"/>
       </joint>
 
       <joint name = "base_joint"  type = "fixed">
