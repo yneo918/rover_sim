@@ -53,7 +53,7 @@
         <parent link="y_axis"/>
         <child link="theta_axis"/>
         <axis xyz="0 0 1"/>
-        <origin xyz="0.0 0.0 0.0" rpy="${theta} ${theta} ${theta}" />
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${theta}" />
         <limit lower="-3" upper="3" effort="0.5" velocity="0.5"/>
       </joint>
       <joint name="t_to_b" type="fixed">
