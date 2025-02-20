@@ -6,6 +6,7 @@ import math
 
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import JointState
+from geometry_msgs.msg import Pose2D
 from pioneer_interfaces.msg import PioneerInfo
 
 from .my_ros_module import PubSubManager
@@ -24,6 +25,7 @@ class JointStates(Node):
 
         self.pubsub.create_subscription(PioneerInfo, 'registered_robot', self.robot_register_callback)
         self.pubsub.create_subscription(PioneerInfo, 'removed_robot', self.robot_remove_callback)
+        #self.pubsub.create_publisher(JointState, 'joint_states', 10)
 
         self.positions = {}
         self.vels = {}
@@ -36,7 +38,7 @@ class JointStates(Node):
         key = robot_name
         if self.vels[key]['alive'] <= 0:
             return
-        self.positions[key]['theta'] -= UPDATE_RATE * ANGLE_VELOCITY_RADIAN_PER_SEC * az
+        self.positions[key]['theta'] += UPDATE_RATE * ANGLE_VELOCITY_RADIAN_PER_SEC * az
         self.positions[key]['x'] += UPDATE_RATE * TRANSFORM_VELOCITY_METER_PER_SEC * lx * math.cos(self.positions[key]['theta'])
         self.positions[key]['y'] += UPDATE_RATE * TRANSFORM_VELOCITY_METER_PER_SEC * lx * math.sin(self.positions[key]['theta'])
         self.vels[key]['alive'] -= 1
@@ -56,12 +58,17 @@ class JointStates(Node):
         jointstates_msg.header.stamp.nanosec = int((t % 1) * 1e9)
         for key in self.vels.keys():
             self.update_position(key, self.vels[key]['transform'], self.vels[key]['rotate'])
-            jointstates_msg.name = [f'/{key}/{joint_name}' for joint_name in self.joint_names]
-            jointstates_msg.position = []
-            jointstates_msg.position.extend([
+            jointstates_msg.name = [f'{joint_name}' for joint_name in self.joint_names]
+            jointstates_msg.position = [
                 self.positions[key]['x'], self.positions[key]['y'], self.positions[key]['theta']
-            ])
-            self.pubsub.publish(f'{key}/joint_states', jointstates_msg)
+            ]
+            #self.pubsub.publish(f'joint_states', jointstates_msg)
+            self.pubsub.publish(f'/{key}/joint_states', jointstates_msg)
+            pose_msg = Pose2D()
+            pose_msg.x = self.positions[key]['x']
+            pose_msg.y = self.positions[key]['y']
+            pose_msg.theta = self.positions[key]['theta']
+            self.pubsub.publish(f'/{key}/pose2D', pose_msg)
 
     def teleop_callback(self, msg, robot_name):
         self.update_vel(robot_name, msg.linear.x, msg.angular.z)
@@ -71,7 +78,8 @@ class JointStates(Node):
         self.vels.update({msg.robot_id: {'transform': 0.0, 'rotate': 0.0, 'alive': 0}})
         self.get_logger().info(f'Received request: Register / {msg.robot_id}')
         self.pubsub.create_subscription(Twist, f'/sim/{msg.robot_id}/cmd_vel', lambda msg, name=msg.robot_id: self.teleop_callback(msg, name), 10)
-        self.pubsub.create_publisher(JointState, f'{msg.robot_id}/joint_states', 10)
+        self.pubsub.create_publisher(JointState, f'/{msg.robot_id}/joint_states', 10)
+        self.pubsub.create_publisher(Pose2D, f'/{msg.robot_id}/pose2D', 10)
     
     def robot_remove_callback(self, msg):
         self.positions.pop(msg.robot_id)

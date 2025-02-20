@@ -4,7 +4,7 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration, Command
 import launch_ros
-from launch_ros.actions import Node
+from launch_ros.actions import Node, PushRosNamespace
 from ament_index_python.packages import get_package_share_directory
 
 def check_service_response(context, *args, **kwargs):
@@ -32,7 +32,7 @@ def launch_setup(context, *args, **kwargs):
         Node(
             package="robot_state_publisher",
             executable="robot_state_publisher",
-            name=f"{robot_id}_state_publisher",
+            name="state_publisher",
             namespace=robot_id,
             output="screen",
             parameters=[{
@@ -51,11 +51,6 @@ def launch_setup(context, *args, **kwargs):
             }]
         ),
         Node(
-            package="tf2_ros",
-            executable="static_transform_publisher",
-            arguments=["0", "0", "0", "0", "0", "0", "world", f"{robot_id}/world"],
-        ),
-        Node(
             package='register_service',
             executable='remove_service_req',
             name='robot_remove_request',
@@ -63,6 +58,11 @@ def launch_setup(context, *args, **kwargs):
             parameters=[{
                 'robot_id': LaunchConfiguration('robot_id')
             }]
+        ),
+        Node(
+            package="tf2_ros",
+            executable="static_transform_publisher",
+            arguments=["0", "0", "0", "0", "0", "0", "world", f"{robot_id}/world"],
         ),
     ]
     return main_nodes
